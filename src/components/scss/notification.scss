@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.componentNotifications{
+    margin:2%; 
+
+    .notification{
+        margin: 2%;
+        padding: 2%;
+        background-color: $Light-grayish-blue-2;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+       
+
+        .content{
+            flex: 0 80%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            font-size: 1.6rem;
+            font-weight: 600;
+            
+
+             h2{
+                 margin: 0 1%;
+                 font-size: 2rem;
+             }
+             .reaction{
+                color: $Dark-grayish-blue;
+             }
+            .postTitile{
+                margin: 0 1%;
+                color: $Very-dark-blue;
+                font-weight: 600;
+            }
+            .group{
+                color: $Blue;
+            }
+        }
+        .message{
+            flex: 1 100%;
+
+        }
+        .data{
+            margin: 0 1%;
+            flex: 1 100%;
+            text-align: start;
+            color: $Grayish-blue;
+        }
+}
+}
+
