@@ -1,5 +1,6 @@
 import React from 'react'
 import "./scss/notification.scss"
+import "../App.scss";
 import Mark from "./assets/images/avatar-mark-webber.webp"
 import Angela from "./assets/images/avatar-angela-gray.webp"
 import Jacob from "./assets/images/avatar-jacob-thompson.webp"
@@ -7,6 +8,7 @@ import Rizky from "./assets/images/avatar-rizky-hasanuddin.webp"
 import Kimberly from "./assets/images/avatar-kimberly-smith.webp"
 import Nathan from "./assets/images/avatar-nathan-peterson.webp"
 import Anna from "./assets/images/avatar-anna-kim.webp"
+import commentedPicture from "./assets/images/image-chess.webp"
 
 
 
@@ -20,6 +22,7 @@ function Notification() {
             postTitle: "My first tournament today!",
             group: "",
             message: "",
+            commentedPicture: "",
             data: "1m ago",
             ifRead: false,
         },
@@ -30,6 +33,7 @@ function Notification() {
             postTitle: "",
             group: "",
             message: "",
+            commentedPicture: "",
             data: "5m ago",
             ifRead: false,
 
@@ -41,6 +45,7 @@ function Notification() {
             postTitle: "",
             group: "Chess Club",
             message: "",
+            commentedPicture: "",
             data: "1 day ago",
             ifRead: false,
 
@@ -52,6 +57,7 @@ function Notification() {
             postTitle: "",
             group: "",
             message: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+            commentedPicture: "",
             data: "5 days ago",
             ifRead: true,
 
@@ -63,6 +69,7 @@ function Notification() {
             postTitle: "",
             group: "",
             message: "",
+            commentedPicture: commentedPicture,
             data: "1 week ago",
             ifRead: true,
 
@@ -74,6 +81,7 @@ function Notification() {
             postTitle: "5 end-game strategies to increase your win rate",
             group: "",
             message: "",
+            commentedPicture: "",
             data: "2 weeks ago",
             ifRead: true,
 
@@ -85,6 +93,7 @@ function Notification() {
             postTitle: "",
             group: "Chess Club",
             message: "",
+            commentedPicture: "",
             data: "2 weeks ago",
             ifRead: true,
 
@@ -96,17 +105,18 @@ function Notification() {
         {
         notifications.map((item, index) =>{
             return(
-                <div className="notification" key={index}>
+                <div className="notification"  style={{backgroundColor: item.ifRead ? "" :  "hsl(210, 60%, 98%)"}} key={index}>
                     <img src={item.avatarSrc} alt={item.title}/>
                     <div className="content">
                         <h2>{item.autor}</h2>
                         <div className="reaction">{item.reaction}</div>
-                        <span className="postTitile">{item.postTitle}</span>
+                        <span className="postTitle">{item.postTitle}</span>
                         <span className="group">{item.group}</span>
                         <span className={item.ifRead ? "" : "notRead"}>{item.ifRead}</span>
-                        
-                        <div className="message">{item.message}</div>
+                        <img className="commentedPicture" src={item.commentedPicture ? item.commentedPicture : ""} alt={item.title}/>
                         <div className="data">{item.data}</div>
+
+                        <div className={item.message ? "message" : ""}>{item.message}</div>
                     </div>
                 </div>
             )
