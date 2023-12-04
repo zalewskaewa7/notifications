@@ -3,7 +3,7 @@
 .componentNotifications{
     margin:2%; 
 
-    .notification{
+    .notificationElement{
         margin: 2%;
         padding: 2%;
         background-color: $White;
@@ -34,6 +34,7 @@
                 color: $Blue;
              }
              .reaction{
+                margin: 0;
                 color: $Dark-grayish-blue;
              }
             .postTitle{
@@ -48,7 +49,7 @@
             }
             .group{
                 color: $Blue;
-                margin: 0 1%;
+                margin: 0 1% 0 0 ;
                 cursor: pointer;
 
             }

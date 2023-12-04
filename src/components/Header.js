@@ -1,7 +1,9 @@
 import React from 'react'
 import "./scss/header.scss"
 
-function Header() {
+function Header(props) {
+
+  
   return (
     <header>
         <div className="notification">
@@ -9,7 +11,7 @@ function Header() {
         
         </div>
         
-        <div className="markAsRead">Mark all as read</div>
+        <div className="markAsRead" onClick={() => props.markAsRead()}>Mark all as read</div>
     </header>
   )
 }
