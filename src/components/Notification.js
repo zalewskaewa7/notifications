@@ -1,19 +1,21 @@
 import React from 'react'
 import "./scss/notification.scss"
 import "../App.scss";
+import { useSelector } from 'react-redux';
+
 
 
 
 
 function Notification(props) {
-
+    const notifications = useSelector((state) => state.readed.notifications)
     
 
   return (
     <div className="componentNotifications">
 
         {
-        props.notifications.map((item, index) =>{
+        notifications.map((item, index) =>{
             return(
                 <div className="notificationElement"  style={{backgroundColor: item.ifRead ? "" :  "hsl(210, 60%, 98%)"}} key={index}>
                     <img src={item.avatarSrc} alt={item.title}/>

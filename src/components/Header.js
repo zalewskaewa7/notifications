@@ -1,17 +1,25 @@
 import React from 'react'
 import "./scss/header.scss"
+import { useDispatch, useSelector } from 'react-redux';
 
-function Header(props) {
+import { markAsReaded } from "../app/redux/slice";
 
+function Header() {
+  const notReaded = useSelector((state) => state.readed.notReaded)
+  const dispatch = useDispatch()
+
+  function markReaded(){
+   dispatch(markAsReaded());
+  }
   
   return (
     <header>
         <div className="notification">
-            <h1>Notifications <span>3</span></h1>
+            <h1>Notifications <span>{notReaded}</span></h1>
         
         </div>
         
-        <div className="markAsRead" onClick={() => props.markAsRead()}>Mark all as read</div>
+        <div className="markAsRead" onClick={() => markReaded()}>Mark all as read</div>
     </header>
   )
 }
