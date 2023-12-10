@@ -12,11 +12,14 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-       
+       .avatarImg{
+        flex: 0 10%;
+       }
 
         .content{
+            margin: 0 2%;
             position: relative;
-            flex: 0 85%;
+            flex: 0 80%;
             display: flex;
             flex-flow: row wrap;
             align-items: center;
@@ -26,7 +29,7 @@
             font-weight: 600;
             
            .mainText{
-            display: flex;
+            display: inline;
             flex: 1 100%;
             flex-flow: row wrap;
             align-items: center;
@@ -34,24 +37,24 @@
             text-align: left;
 
 
-            h2{
+            .author{               
                  margin: 0 1%;
                  font-size: 2rem;
                  cursor: pointer;
 
              }
-             h2:hover{
+             .author:hover{
                 color: $Blue;
              }
-             .reaction{
-                order: 2;
+             .reaction{ 
+                font-size: 1.7rem;               
                 text-align: left;
                 margin: 0;
                 color: $Dark-grayish-blue;
              }
+             
             .postTitle{
-                order: 3;
-                margin: 0 1%;
+                margin: 0 ;
                 color: $Very-dark-blue;
                 font-weight: 600;
                 cursor: pointer;
@@ -61,7 +64,6 @@
                 font-weight: 700;
             }
             .group{
-                order: 4;
                 color: $Blue;
                 margin: 0 1% 0 0 ;
                 cursor: pointer;
@@ -75,12 +77,12 @@
 
         }
         .notRead{
-
-            order: 5;
-            padding: 0.5%;
+            display:inline-flex;
+            padding: 5px;
             border-radius: 10px;
             background-color: $Red;
         }
+    
            }
 
              
@@ -115,7 +117,7 @@
 @media all and (max-width:  680px)  {
     .componentNotifications{
         .notificationElement{
-            img{
+            .avatarImg{
                 flex: 0 20%;
                 width: 50%;
                 height: auto;
@@ -131,16 +133,15 @@
 
                 .mainText{
 
-                     h2{
+                     .author{
                     margin: 0 1%;
                     font-size: 1.7rem; 
                      
                     }
-                .commentedPicture{
-                    position: static;
-                    order: 6;
-                    
+                    .reaction{ 
+                        font-size: 1.5rem;
                     }
+                
                     .notRead{
                         order: 5;
                         padding: 1%;
@@ -148,8 +149,38 @@
                         border-radius: 10px;
                         background-color: $Red;
                     }
+                    .commentedPicture{
+
+                        position:static;
+                       float: right;
+        
+                }
                 }
                
+            }
+        }
+    }
+
+}
+
+@media all and (max-width:  480px)  {
+    .componentNotifications{
+        .notificationElement{
+           
+            .content{
+               
+                font-size: 1.2rem;
+
+                .mainText{
+
+                    .author{
+                    font-size: 1.5rem; 
+                     
+                    }
+                    .reaction{ 
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
     }

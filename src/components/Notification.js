@@ -18,19 +18,20 @@ function Notification(props) {
         notifications.map((item, index) =>{
             return(
                 <div className="notificationElement"  style={{backgroundColor: item.ifRead ? "" :  "hsl(210, 60%, 98%)"}} key={index}>
-                    <img src={item.avatarSrc} alt={item.title}/>
+                    <img className="avatarImg" src={item.avatarSrc} alt={item.title}/>
                     <div className="content">
                         <div className="mainText">
-                        <h2>{item.autor}</h2>
-                        <div className="reaction">{item.reaction} 
+                            <span className="author">{item.autor}</span>
+                            
+                            <span className="reaction"> {item.reaction} </span>
+                            <span className="postTitle">{item.postTitle}</span>
                         
-                        </div>
-                        <p className="postTitle">{item.postTitle}</p>
-                       
-                        
-                        <span className="group">{item.group}</span>
-                        <span className={item.ifRead ? "" : "notRead"}>{item.ifRead}</span>
-                        <img className="commentedPicture" src={item.commentedPicture ? item.commentedPicture : ""} alt={item.title}/>
+                            
+                            <span className="group">{item.group}</span>
+                            <span className={item.ifRead ? "" : "notRead"}>{item.ifRead}</span>
+                            
+                            
+                            <img className="commentedPicture" src={item.commentedPicture ? item.commentedPicture : ""} alt={item.title}/>
                         </div>
                         <div className="data">{item.data}</div>
 
