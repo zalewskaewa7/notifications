@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/notifications/static/css/main.f18c7d2b.css",
+    "main.js": "/notifications/static/js/main.99bef1b6.js",
+    "static/js/787.4b7283b7.chunk.js": "/notifications/static/js/787.4b7283b7.chunk.js",
+    "static/media/PlusJakartaSans-VariableFont_wght.ttf": "/notifications/static/media/PlusJakartaSans-VariableFont_wght.ae47e4d01757abf8ad63.ttf",
+    "static/media/PlusJakartaSans-Medium.ttf": "/notifications/static/media/PlusJakartaSans-Medium.b1ea1e4a874b401f584a.ttf",
+    "static/media/PlusJakartaSans-ExtraBold.ttf": "/notifications/static/media/PlusJakartaSans-ExtraBold.5a0637ca31265773a597.ttf",
+    "static/media/avatar-rizky-hasanuddin.webp": "/notifications/static/media/avatar-rizky-hasanuddin.2c9e9a5d4982e8f1b614.webp",
+    "static/media/avatar-jacob-thompson.webp": "/notifications/static/media/avatar-jacob-thompson.ef1880754355ebe956bb.webp",
+    "static/media/avatar-nathan-peterson.webp": "/notifications/static/media/avatar-nathan-peterson.03727540c8ed8341d745.webp",
+    "static/media/avatar-anna-kim.webp": "/notifications/static/media/avatar-anna-kim.14242399b99facbf45c7.webp",
+    "static/media/avatar-mark-webber.webp": "/notifications/static/media/avatar-mark-webber.e3e820b976dfaf7f762a.webp",
+    "static/media/image-chess.webp": "/notifications/static/media/image-chess.b06cd5b36869c9a4784e.webp",
+    "static/media/avatar-kimberly-smith.webp": "/notifications/static/media/avatar-kimberly-smith.00520dc2b2f8e585aac5.webp",
+    "static/media/avatar-angela-gray.webp": "/notifications/static/media/avatar-angela-gray.be3397e8fa98e1cac926.webp",
+    "index.html": "/notifications/index.html",
+    "main.f18c7d2b.css.map": "/notifications/static/css/main.f18c7d2b.css.map",
+    "main.99bef1b6.js.map": "/notifications/static/js/main.99bef1b6.js.map",
+    "787.4b7283b7.chunk.js.map": "/notifications/static/js/787.4b7283b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f18c7d2b.css",
+    "static/js/main.99bef1b6.js"
+  ]
+}
