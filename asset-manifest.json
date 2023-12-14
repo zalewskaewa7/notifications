@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/notifications/static/css/main.c71f3af3.css",
-    "main.js": "/notifications/static/js/main.7103f168.js",
+    "main.js": "/notifications/static/js/main.bcd00349.js",
     "static/js/787.4b7283b7.chunk.js": "/notifications/static/js/787.4b7283b7.chunk.js",
     "static/media/PlusJakartaSans-VariableFont_wght.ttf": "/notifications/static/media/PlusJakartaSans-VariableFont_wght.ae47e4d01757abf8ad63.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/notifications/static/media/PlusJakartaSans-Medium.b1ea1e4a874b401f584a.ttf",
@@ -16,11 +16,11 @@
     "static/media/avatar-angela-gray.webp": "/notifications/static/media/avatar-angela-gray.be3397e8fa98e1cac926.webp",
     "index.html": "/notifications/index.html",
     "main.c71f3af3.css.map": "/notifications/static/css/main.c71f3af3.css.map",
-    "main.7103f168.js.map": "/notifications/static/js/main.7103f168.js.map",
+    "main.bcd00349.js.map": "/notifications/static/js/main.bcd00349.js.map",
     "787.4b7283b7.chunk.js.map": "/notifications/static/js/787.4b7283b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c71f3af3.css",
-    "static/js/main.7103f168.js"
+    "static/js/main.bcd00349.js"
   ]
 }
