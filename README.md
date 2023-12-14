@@ -5,8 +5,8 @@
 To completed this project I use React app, Redux and sass css.
 
 - Here is design for desktop from Frontend Mentor:
-![Design desktop for the notifications coding challenge](./src/assets/images/desktop-design.jpg)
+![Design desktop for the notifications coding challenge](./src/components/assets/images/desktop-design.jpg)
 - This is my screenshot:
-![Design desktop for the notifications coding challenge](./src/assets/images/discScreen.png)
+![Design desktop for the notifications coding challenge](./src/components/assets/images/discScreen.png)
 
 All challenge on https://zalewskaewa7.github.io/notifications/
